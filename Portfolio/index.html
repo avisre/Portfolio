@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Avinah Sreekumar - Web Developer</title>
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1c1c1c, #4b0082, #551a8b); /* Black to various shades of purple */
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(85, 26, 139, 0.8); /* Semi-transparent purple */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInHeader 1s ease-in-out forwards;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            opacity: 0;
+        }
+
+        @keyframes fadeInHeader {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInAboutMe {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInProjects {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInContact {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section:nth-child(2) {
+            animation: fadeInAboutMe 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        section:nth-child(3) {
+            animation: fadeInProjects 1s ease-in-out forwards;
+            animation-delay: 1s;
+        }
+
+        section:nth-child(4) {
+            animation: fadeInContact 1s ease-in-out forwards;
+            animation-delay: 1.5s;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #fff;
+        }
+
+        p {
+            text-align: justify;
+            color: #e0e0e0; /* Light gray for better readability */
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #551a8b; /* Purple */
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #1c1c1c; /* Dark gray for better readability */
+            background-color: #fff;
+        }
+
+        button {
+            background-color: #551a8b; /* Purple */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Full-Stack Web Developer </h1>
+        <h2>Avinash Sreekumar</h2>
+        <p>Turning coffee into code with a dash of humor</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hey there! I'm Avinah Sreekumar, a web developer with three years of experience. I specialize in the art of turning
+            caffeine into code, crafting websites that not only work seamlessly but also have a touch of personality. When I'm
+            not debugging, you can find me adding humor to my code or trying to convince browsers to understand my
+            sarcasm.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="project1.jpg" alt="Project 1">
+        </div>
+
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="project2.jpg" alt="Project 2">
+        </div>
+
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="project3.jpg" alt="Project 3">
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+
+        <div class="contact-form">
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
